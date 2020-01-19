@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker-compose exec slave_player_service $@
