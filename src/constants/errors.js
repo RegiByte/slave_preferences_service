@@ -8,4 +8,8 @@ module.exports = {
   USERNAME_OR_PASSWORD_WRONG: 'username_or_password_wrong',
   MISSING_DB_INFO: 'missing_db_info',
   MISSING_ORIGIN: 'missing_origin',
+  PREFERENCE_NOT_FOUND: 'preference_not_found',
+  PREFERENCE_ALREADY_EXISTS: 'preference_already_exists',
+  MISSING_KEY: 'missing_key',
+  PREFERENCE_NOT_DELETEABLE: 'preference_not_deleteable',
 };

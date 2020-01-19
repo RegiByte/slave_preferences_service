@@ -1,13 +1,13 @@
 version: '3.7'
 services:
-  slave_player_service:
+  slave_preferences_service:
     build:
       context: .
     restart: 'no'
     volumes:
       - './:/app'
     ports:
-      - '4001:4001'
+      - '4002:4002'
     networks:
       - proradio
 

@@ -1,4 +1,4 @@
-import { groupBy, mapValues } from 'lodash';
+import { groupBy } from 'lodash';
 import { configure } from 'indicative/validator';
 
 class Formatter {
@@ -23,15 +23,18 @@ class Formatter {
   }
 
   toJSON() {
-    return this.errors.length
-      ? mapValues(
-          groupBy(this.errors, 'field'),
-          ({ field: _field, ...rest }) => ({
-            ...rest,
-          })
-        )
-      : null;
+    return this.errors.length ? groupBy(this.errors, 'field') : null;
   }
+}
+
+export function validationErrors(errors) {
+  return {
+    error: {
+      name: 'Validation',
+      message: 'Validation Errors',
+      frames: errors,
+    },
+  };
 }
 
 configure({

@@ -1,5 +1,5 @@
 import { errorHandler } from '../../../helper/errorHandlers';
-import { getApplication } from '../../services/ApplicationService';
+import { getApplication } from '../../services/application';
 import Database from '../../../database';
 
 export default async function SetupDB(req, res, next) {
