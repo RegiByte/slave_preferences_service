@@ -38,7 +38,7 @@
     "express-async-errors": "^3.1.1",
     "indicative": "^7.4.4",
     "indicative-utils": "^7.0.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.15",
     "pg": "^7.17.1",
     "pg-hstore": "^2.3.3",
